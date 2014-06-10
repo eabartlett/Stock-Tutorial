@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SymbolViewController.h
 //  Stocks
 //
 //  Created by Jonathan Wight on 6/9/14.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SymbolViewController : UIViewController
 
+@property (readwrite, nonatomic, copy) NSString *symbol;
 
 @end
 
