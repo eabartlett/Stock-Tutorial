@@ -39,7 +39,7 @@
 		4D959B311947D97500B2ACD7 /* Stocks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stocks-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D959B321947D97500B2ACD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolsTableViewController.swift; sourceTree = "<group>"; };
-		4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolViewController.swift; path = ../SymbolViewController.swift; sourceTree = "<group>"; };
+		4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		4D959B381948238100B2ACD7 /* StockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
