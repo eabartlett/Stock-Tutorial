@@ -15,6 +15,7 @@
 		45249CAC194686CA008F4993 /* StocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CAB194686CA008F4993 /* StocksTests.m */; };
 		45249CB719468BB3008F4993 /* SymbolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CB619468BB3008F4993 /* SymbolsTableViewController.m */; };
 		45CF495919477FFB004A1466 /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF495819477FFB004A1466 /* StockModel.m */; };
+		4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B321947D97500B2ACD7 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		45249CB619468BB3008F4993 /* SymbolsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolsTableViewController.m; sourceTree = "<group>"; };
 		45CF495719477FFB004A1466 /* StockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockModel.h; sourceTree = "<group>"; };
 		45CF495819477FFB004A1466 /* StockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockModel.m; sourceTree = "<group>"; };
+		4D959B311947D97500B2ACD7 /* Stocks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stocks-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D959B321947D97500B2ACD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,14 +88,8 @@
 		45249C91194686CA008F4993 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
-				45249C96194686CA008F4993 /* AppDelegate.h */,
-				45249C97194686CA008F4993 /* AppDelegate.m */,
-				45249CB519468BB3008F4993 /* SymbolsTableViewController.h */,
-				45249CB619468BB3008F4993 /* SymbolsTableViewController.m */,
-				45249C99194686CA008F4993 /* SymbolViewController.h */,
-				45249C9A194686CA008F4993 /* SymbolViewController.m */,
-				45CF495719477FFB004A1466 /* StockModel.h */,
-				45CF495819477FFB004A1466 /* StockModel.m */,
+				4D959B321947D97500B2ACD7 /* AppDelegate.swift */,
+				4D959B301947D95B00B2ACD7 /* Old Crap */,
 				45249C9C194686CA008F4993 /* Main.storyboard */,
 				45249C9F194686CA008F4993 /* Images.xcassets */,
 				45249C92194686CA008F4993 /* Supporting Files */,
@@ -103,6 +100,7 @@
 		45249C92194686CA008F4993 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D959B311947D97500B2ACD7 /* Stocks-Bridging-Header.h */,
 				45249C93194686CA008F4993 /* Info.plist */,
 				45249C94194686CA008F4993 /* main.m */,
 			);
@@ -124,6 +122,21 @@
 				45249CAA194686CA008F4993 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D959B301947D95B00B2ACD7 /* Old Crap */ = {
+			isa = PBXGroup;
+			children = (
+				45249C96194686CA008F4993 /* AppDelegate.h */,
+				45249C97194686CA008F4993 /* AppDelegate.m */,
+				45249CB519468BB3008F4993 /* SymbolsTableViewController.h */,
+				45249CB619468BB3008F4993 /* SymbolsTableViewController.m */,
+				45249C99194686CA008F4993 /* SymbolViewController.h */,
+				45249C9A194686CA008F4993 /* SymbolViewController.m */,
+				45CF495719477FFB004A1466 /* StockModel.h */,
+				45CF495819477FFB004A1466 /* StockModel.m */,
+			);
+			name = "Old Crap";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */,
 				45249CB719468BB3008F4993 /* SymbolsTableViewController.m in Sources */,
 				45249C9B194686CA008F4993 /* SymbolViewController.m in Sources */,
 				45CF495919477FFB004A1466 /* StockModel.m in Sources */,
@@ -346,11 +360,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Stocks/Stocks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,11 +376,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Stocks/Stocks-Bridging-Header.h";
 			};
 			name = Release;
 		};
