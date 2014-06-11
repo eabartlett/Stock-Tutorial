@@ -10,7 +10,7 @@ import UIKit
 
 class SymbolsTableViewController: UITableViewController {
 
-    let symbols = StockModel.sharedInstance().symbols as String[]
+    let symbols = StockModel.sharedInstance.symbols as String[]
 
     // UIViewController
 

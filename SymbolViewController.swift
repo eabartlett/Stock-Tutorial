@@ -15,7 +15,7 @@ class SymbolViewController: UIViewController {
         title = symbol
     }}
     
-    var stockInfo: NSDictionary?
+    var stockInfo: Dictionary<String,Int>?
 
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var openClosePriceLabel: UILabel!
@@ -34,9 +34,9 @@ class SymbolViewController: UIViewController {
                     self.stockInfo = info
                     let numberFormatter = NSNumberFormatter()
                     numberFormatter.numberStyle = .CurrencyStyle
-                    let lastPrice = (info?.objectForKey("LastPrice") as NSNumber)
+                    let lastPrice = info?["LastPrice"]
                     self.priceLabel.text = numberFormatter.stringFromNumber(lastPrice)
-                    let open = (info?.objectForKey("Open") as NSNumber)
+                    let open = info?["Open"]
                     self.openClosePriceLabel.text = "Open: \(numberFormatter.stringFromNumber(open))"
                 }
             }

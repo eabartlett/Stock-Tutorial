@@ -33,7 +33,7 @@ struct StockModel {
     }
 
 
-    func fetchInfoForSymbol(symbol: String, handler: (info: Dictionary<String,String>?, error: NSError?) -> ()) {
+    func fetchInfoForSymbol(symbol: String, handler: (info: Dictionary<String,Int>?, error: NSError?) -> ()) {
 
         let urlString = "http://dev.markitondemand.com/Api/v2/Quote/json?symbol=\(symbol)"
         let url = NSURL.URLWithString(urlString)
@@ -43,8 +43,9 @@ struct StockModel {
             (data, response, error) in
             var jsonError: NSError?
             let opt = NSJSONReadingOptions(0)
-            let json = NSJSONSerialization.JSONObjectWithData(data, options: opt, error: &jsonError) as? Dictionary<String,String>
+            let json = NSJSONSerialization.JSONObjectWithData(data, options: opt, error: &jsonError) as? Dictionary<String,Int>
             handler(info: json, error: jsonError)
         }
+        task.resume()
     }
 }
