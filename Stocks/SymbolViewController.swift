@@ -8,6 +8,10 @@
 
 import UIKit
 
+func µ(runOnMain: ()->()) {
+    dispatch_async(dispatch_get_main_queue(), runOnMain)
+}
+
 class SymbolViewController: UIViewController {
 
     var symbol: String? {
@@ -20,17 +24,16 @@ class SymbolViewController: UIViewController {
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var openClosePriceLabel: UILabel!
 
-
     override func viewDidLoad() {
 
         super.viewDidLoad()
         title = symbol
 
         if let safeSymbol = symbol {
-            StockModel.sharedInstance.fetchInfoForSymbol(safeSymbol) {
+            sharedStockModel.fetchInfoForSymbol(safeSymbol) {
                 (info, error) in
 
-                dispatch_async(dispatch_get_main_queue()) {
+                µ({
                     self.stockInfo = info
                     let numberFormatter = NSNumberFormatter()
                     numberFormatter.numberStyle = .CurrencyStyle
@@ -38,7 +41,7 @@ class SymbolViewController: UIViewController {
                     self.priceLabel.text = numberFormatter.stringFromNumber(lastPrice)
                     let open = info?["Open"]
                     self.openClosePriceLabel.text = "Open: \(numberFormatter.stringFromNumber(open))"
-                }
+                })
             }
         }
     }

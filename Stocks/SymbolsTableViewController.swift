@@ -10,17 +10,7 @@ import UIKit
 
 class SymbolsTableViewController: UITableViewController {
 
-    let symbols = StockModel.sharedInstance.symbols as String[]
-
-    // UIViewController
-
-    init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-
-    init(coder aDecoder: NSCoder!) {
-        super.init(coder: aDecoder)
-    }
+    let symbols = sharedStockModel.symbols as String[]
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
 
@@ -44,7 +34,7 @@ extension SymbolsTableViewController { // UITableViewDataSource
 
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
 
-        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("CELL", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("CELL", forIndexPath: indexPath) as UITableViewCell
         cell.textLabel.text = self.symbols[indexPath.row]
         return cell
 
