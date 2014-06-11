@@ -8,13 +8,13 @@
 
 import UIKit
 
-class AppDelegate2: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 }
 
-extension AppDelegate2 { // UIApplicationDelegate
+extension AppDelegate { // UIApplicationDelegate
 
     func application(application: UIApplication!,
         didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
