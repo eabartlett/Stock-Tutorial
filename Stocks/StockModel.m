@@ -7,6 +7,7 @@
 //
 
 #import "StockModel.h"
+#import "Stocks-Swift.h"
 
 @interface StockModel ()
 @property (readwrite, nonatomic, copy) NSArray *symbols;

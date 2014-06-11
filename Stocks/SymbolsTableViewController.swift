@@ -8,15 +8,18 @@
 
 import UIKit
 
-class SymbolsTableViewController2: UITableViewController {
+class SymbolsTableViewController: UITableViewController {
 
     let symbols = StockModel.sharedInstance().symbols as String[]
 
     // UIViewController
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
@@ -31,7 +34,7 @@ class SymbolsTableViewController2: UITableViewController {
 
 }
 
-extension SymbolsTableViewController2 { // UITableViewDataSource
+extension SymbolsTableViewController { // UITableViewDataSource
 
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
 

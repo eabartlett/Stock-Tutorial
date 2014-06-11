@@ -12,10 +12,10 @@
 		45249C9E194686CA008F4993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45249C9C194686CA008F4993 /* Main.storyboard */; };
 		45249CA0194686CA008F4993 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45249C9F194686CA008F4993 /* Images.xcassets */; };
 		45249CAC194686CA008F4993 /* StocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CAB194686CA008F4993 /* StocksTests.m */; };
-		45249CB719468BB3008F4993 /* SymbolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CB619468BB3008F4993 /* SymbolsTableViewController.m */; };
 		45CF495919477FFB004A1466 /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF495819477FFB004A1466 /* StockModel.m */; };
 		4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B321947D97500B2ACD7 /* AppDelegate.swift */; };
 		4D959B351947DB3400B2ACD7 /* SymbolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */; };
+		4D959B371947DE5500B2ACD7 /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,12 @@
 		45249CA5194686CA008F4993 /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45249CAA194686CA008F4993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45249CAB194686CA008F4993 /* StocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StocksTests.m; sourceTree = "<group>"; };
-		45249CB519468BB3008F4993 /* SymbolsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolsTableViewController.h; sourceTree = "<group>"; };
-		45249CB619468BB3008F4993 /* SymbolsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolsTableViewController.m; sourceTree = "<group>"; };
 		45CF495719477FFB004A1466 /* StockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockModel.h; sourceTree = "<group>"; };
 		45CF495819477FFB004A1466 /* StockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockModel.m; sourceTree = "<group>"; };
 		4D959B311947D97500B2ACD7 /* Stocks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stocks-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D959B321947D97500B2ACD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolsTableViewController.swift; sourceTree = "<group>"; };
+		4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolViewController.swift; path = ../SymbolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +88,7 @@
 			children = (
 				4D959B321947D97500B2ACD7 /* AppDelegate.swift */,
 				4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */,
+				4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */,
 				4D959B301947D95B00B2ACD7 /* Old Crap */,
 				45249C9C194686CA008F4993 /* Main.storyboard */,
 				45249C9F194686CA008F4993 /* Images.xcassets */,
@@ -127,8 +127,6 @@
 		4D959B301947D95B00B2ACD7 /* Old Crap */ = {
 			isa = PBXGroup;
 			children = (
-				45249CB519468BB3008F4993 /* SymbolsTableViewController.h */,
-				45249CB619468BB3008F4993 /* SymbolsTableViewController.m */,
 				45249C99194686CA008F4993 /* SymbolViewController.h */,
 				45249C9A194686CA008F4993 /* SymbolViewController.m */,
 				45CF495719477FFB004A1466 /* StockModel.h */,
@@ -237,8 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */,
-				45249CB719468BB3008F4993 /* SymbolsTableViewController.m in Sources */,
 				4D959B351947DB3400B2ACD7 /* SymbolsTableViewController.swift in Sources */,
+				4D959B371947DE5500B2ACD7 /* SymbolViewController.swift in Sources */,
 				45249C9B194686CA008F4993 /* SymbolViewController.m in Sources */,
 				45CF495919477FFB004A1466 /* StockModel.m in Sources */,
 				45249C95194686CA008F4993 /* main.m in Sources */,
