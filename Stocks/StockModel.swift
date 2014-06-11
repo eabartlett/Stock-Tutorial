@@ -8,10 +8,6 @@
 
 import UIKit
 
-func µ(runOnMain: @auto_closure () -> ()) {
-    dispatch_async(dispatch_get_main_queue(), runOnMain)
-}
-
 struct StockModel {
 
     let symbols = ["TWTR", "AAPL"]
