@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45249C95194686CA008F4993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249C94194686CA008F4993 /* main.m */; };
-		45249C9B194686CA008F4993 /* SymbolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249C9A194686CA008F4993 /* SymbolViewController.m */; };
 		45249C9E194686CA008F4993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45249C9C194686CA008F4993 /* Main.storyboard */; };
 		45249CA0194686CA008F4993 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45249C9F194686CA008F4993 /* Images.xcassets */; };
 		45249CAC194686CA008F4993 /* StocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CAB194686CA008F4993 /* StocksTests.m */; };
@@ -32,8 +31,6 @@
 		45249C8F194686CA008F4993 /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45249C93194686CA008F4993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45249C94194686CA008F4993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		45249C99194686CA008F4993 /* SymbolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymbolViewController.h; sourceTree = "<group>"; };
-		45249C9A194686CA008F4993 /* SymbolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymbolViewController.m; sourceTree = "<group>"; };
 		45249C9D194686CA008F4993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45249C9F194686CA008F4993 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		45249CA5194686CA008F4993 /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,8 +124,6 @@
 		4D959B301947D95B00B2ACD7 /* Old Crap */ = {
 			isa = PBXGroup;
 			children = (
-				45249C99194686CA008F4993 /* SymbolViewController.h */,
-				45249C9A194686CA008F4993 /* SymbolViewController.m */,
 				45CF495719477FFB004A1466 /* StockModel.h */,
 				45CF495819477FFB004A1466 /* StockModel.m */,
 			);
@@ -237,7 +232,6 @@
 				4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */,
 				4D959B351947DB3400B2ACD7 /* SymbolsTableViewController.swift in Sources */,
 				4D959B371947DE5500B2ACD7 /* SymbolViewController.swift in Sources */,
-				45249C9B194686CA008F4993 /* SymbolViewController.m in Sources */,
 				45CF495919477FFB004A1466 /* StockModel.m in Sources */,
 				45249C95194686CA008F4993 /* main.m in Sources */,
 			);

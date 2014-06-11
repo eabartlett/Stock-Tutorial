@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymbolViewController2: UIViewController {
+class SymbolViewController: UIViewController {
 
     var symbol: String? {
     didSet {
@@ -39,7 +39,7 @@ class SymbolViewController2: UIViewController {
                 }
                 if let label = self.openClosePriceLabel {
                     let open = (info?.objectForKey("Open") as NSNumber)
-                    label.text = numberFormatter.stringFromNumber(open)
+                    label.text = "Open: \(numberFormatter.stringFromNumber(open))"
                 }
             }
 
