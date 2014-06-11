@@ -26,19 +26,20 @@ class SymbolViewController: UIViewController {
         super.viewDidLoad()
         title = symbol
 
-        StockModel.sharedInstance().fetchInfoForSymbol(symbol) {
-            (info: NSDictionary?, error) in
+        if let safeSymbol = symbol {
+            StockModel.sharedInstance.fetchInfoForSymbol(safeSymbol) {
+                (info, error) in
 
-            dispatch_async(dispatch_get_main_queue()) {
-                self.stockInfo = info
-                let numberFormatter = NSNumberFormatter()
-                numberFormatter.numberStyle = .CurrencyStyle
-                let lastPrice = (info?.objectForKey("LastPrice") as NSNumber)
-                self.priceLabel.text = numberFormatter.stringFromNumber(lastPrice)
-                let open = (info?.objectForKey("Open") as NSNumber)
-                self.openClosePriceLabel.text = "Open: \(numberFormatter.stringFromNumber(open))"
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.stockInfo = info
+                    let numberFormatter = NSNumberFormatter()
+                    numberFormatter.numberStyle = .CurrencyStyle
+                    let lastPrice = (info?.objectForKey("LastPrice") as NSNumber)
+                    self.priceLabel.text = numberFormatter.stringFromNumber(lastPrice)
+                    let open = (info?.objectForKey("Open") as NSNumber)
+                    self.openClosePriceLabel.text = "Open: \(numberFormatter.stringFromNumber(open))"
+                }
             }
-
         }
     }
 }

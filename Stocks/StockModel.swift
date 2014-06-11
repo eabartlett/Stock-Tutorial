@@ -12,19 +12,19 @@ func µ(runOnMain: @auto_closure () -> ()) {
     dispatch_async(dispatch_get_main_queue(), runOnMain)
 }
 
-struct StockModel2 {
+struct StockModel {
 
     let symbols = ["TWTR", "AAPL"]
 
-    static var sharedInstance: StockModel2 {
+    static var sharedInstance: StockModel {
     get {
         struct Static {
-            static var instance : StockModel2? = nil
+            static var instance : StockModel? = nil
             static var token : dispatch_once_t = 0
         }
 
         dispatch_once(&Static.token) {
-            Static.instance = StockModel2()
+            Static.instance = StockModel()
             println("Hello!")
         }
 
