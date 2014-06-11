@@ -17,8 +17,8 @@ class SymbolViewController: UIViewController {
     
     var stockInfo: NSDictionary?
 
-    @IBOutlet var priceLabel: UILabel?
-    @IBOutlet var openClosePriceLabel: UILabel?
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var openClosePriceLabel: UILabel!
 
 
     override func viewDidLoad() {
@@ -33,14 +33,10 @@ class SymbolViewController: UIViewController {
                 self.stockInfo = info
                 let numberFormatter = NSNumberFormatter()
                 numberFormatter.numberStyle = .CurrencyStyle
-                if let label = self.priceLabel {
-                    let lastPrice = (info?.objectForKey("LastPrice") as NSNumber)
-                    label.text = numberFormatter.stringFromNumber(lastPrice)
-                }
-                if let label = self.openClosePriceLabel {
-                    let open = (info?.objectForKey("Open") as NSNumber)
-                    label.text = "Open: \(numberFormatter.stringFromNumber(open))"
-                }
+                let lastPrice = (info?.objectForKey("LastPrice") as NSNumber)
+                self.priceLabel.text = numberFormatter.stringFromNumber(lastPrice)
+                let open = (info?.objectForKey("Open") as NSNumber)
+                self.openClosePriceLabel.text = "Open: \(numberFormatter.stringFromNumber(open))"
             }
 
         }
