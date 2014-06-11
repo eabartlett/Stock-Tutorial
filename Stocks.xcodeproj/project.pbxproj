@@ -15,6 +15,7 @@
 		4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B321947D97500B2ACD7 /* AppDelegate.swift */; };
 		4D959B351947DB3400B2ACD7 /* SymbolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */; };
 		4D959B371947DE5500B2ACD7 /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */; };
+		4D959B391948238100B2ACD7 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D959B381948238100B2ACD7 /* StockModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4D959B321947D97500B2ACD7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolsTableViewController.swift; sourceTree = "<group>"; };
 		4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolViewController.swift; path = ../SymbolViewController.swift; sourceTree = "<group>"; };
+		4D959B381948238100B2ACD7 /* StockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				4D959B321947D97500B2ACD7 /* AppDelegate.swift */,
 				4D959B341947DB3400B2ACD7 /* SymbolsTableViewController.swift */,
 				4D959B361947DE5500B2ACD7 /* SymbolViewController.swift */,
+				4D959B381948238100B2ACD7 /* StockModel.swift */,
 				4D959B301947D95B00B2ACD7 /* Old Crap */,
 				45249C9C194686CA008F4993 /* Main.storyboard */,
 				45249C9F194686CA008F4993 /* Images.xcassets */,
@@ -231,6 +234,7 @@
 			files = (
 				4D959B331947D97500B2ACD7 /* AppDelegate.swift in Sources */,
 				4D959B351947DB3400B2ACD7 /* SymbolsTableViewController.swift in Sources */,
+				4D959B391948238100B2ACD7 /* StockModel.swift in Sources */,
 				4D959B371947DE5500B2ACD7 /* SymbolViewController.swift in Sources */,
 				45CF495919477FFB004A1466 /* StockModel.m in Sources */,
 				45249C95194686CA008F4993 /* main.m in Sources */,
